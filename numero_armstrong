@@ -1,0 +1,12 @@
+#Posible solucion al ejericcio 15 de https://retosdeprogramacion.com/ejercicios/
+#Escribe una función que calcule si un número dado es un número de Armstrong
+# (o también llamado narcisista).
+# Si no conoces qué es un número de Armstrong, debes buscar información
+# al respecto.
+
+def armstrong(numero):
+  resultado = sum([int(digito)**len(str(numero)) for digito in str(numero)])
+  if resultado == numero:
+    return f"El número {numero} es un número de Armstrong"
+  else:
+    return f"El número {numero} NO es un número de Armstrong"
